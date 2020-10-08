@@ -1,0 +1,777 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Rubik', sans-serif;
+    background: #EFEFEF;
+}
+
+.contenedor{
+    width: 100%;
+    height: 100%;
+}
+
+.imgFondo::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(img/fondo.jpg);
+    background-size:cover;
+    opacity: .4;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+}
+
+.subheader{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    background: white;
+    z-index: 1;
+    top: 0;
+}
+
+
+.logo img{
+    left: 0;
+    width: 100px;
+    height: 80px;
+    margin-left: 10rem;
+    background: none;
+}
+
+.nav{
+    right: 0;
+    margin-left: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav .nv{
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.nav .nv:hover{
+    color: #A2050F;
+    cursor: pointer;
+}
+
+.wtsp{
+    background: #a2050f;
+    width: 180px;
+    height: 45px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    right: 0;
+    border: none;
+    display: flex;
+    letter-spacing: 1px;
+}
+
+.wtsp img{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.wtsp span{
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.wtsp:hover{
+    background: #580308;
+    cursor: pointer;
+}
+
+.contenido{
+    position: absolute;
+    width: 50%;
+    height: 65%;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+.contenido .texto1, .texto2{
+    color: #001A40;
+}
+
+.contenido .texto1{
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 1rem;
+}
+
+.contenido .texto2{
+    font-weight: bold;
+    margin-top: 45px;
+    margin-left: 10px;
+    font-size: 70px;
+}
+
+.contenido button{
+    width: 30%;
+    height: 55px;
+    margin-top: 40px;
+    margin-left: 20px;
+    font-weight: bold;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+}
+
+.contenido .btn1{
+    background: #a2050f;
+}
+
+.contenido .btn1:hover{
+    background: #580308;
+    cursor: pointer;
+}
+
+.contenido .btn2{
+    background: #001A40;
+}
+
+.contenido .btn2:hover{
+    background: #000;
+    cursor: pointer;
+}
+
+
+.contenido2{
+    height: 50%;
+    background: #585858;
+    padding-top: 75px;
+    padding-bottom: 60px;
+    margin-top: 43.5%;
+    display: grid;
+    grid-template-areas: "texto1 btnPDF";
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.contenido2 .texto1{
+    grid-area: texto1;
+    font-size: 45px;
+    color: #fff;
+    margin-left: 25%;
+}
+
+.contenido2 .btnPDF{
+    grid-area: btnPDF;
+    background: #a2050f;
+    color: #fff;
+    width: 280px;
+    height: 60px;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    margin: 5% 15%;
+    display: flex;
+}
+
+.btnPDF img{
+    margin-left: 3rem;
+    margin-top: 0.6rem;
+}
+
+
+.btnPDF .textopdf{
+    text-align: center;
+    align-items: center;
+    font-size: 15px;
+    margin: 1rem;
+}
+
+.contenido2 .btnPDF:hover{
+    background: #580308;
+    cursor: pointer;
+}
+
+.contenedorsvg{
+    background: #fff;
+}
+
+.contenido3{
+    height: 16rem;
+    display: grid;
+    grid-template-areas: "fecha accesos certificacion modalidad";
+    grid-template-columns: repeat(4, 1fr);
+    padding: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.contenido3 .fecha{
+    grid-area: fecha;
+}
+
+.contenido3 .accesos{
+    grid-area: accesos;
+}
+
+.contenido3 img{
+    width: 100px;
+    height: 100px;
+}
+
+
+.contenido3 .certificacion{
+    grid-area: certificacion;
+}
+
+.contenido3 .modalidad{
+    grid-area: modalidad;
+}
+
+.contenido3 .texto1{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.contenido3 .texto2{
+    font-size: 18px;
+}
+
+
+.contenido4{
+    background: #EFEFEF;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: "presentacion foto"
+                         "desc1 desc2";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:  0.5fr 0.5fr;
+    grid-gap: 2rem;
+}
+
+.contenido4 .presentacion{
+    grid-area: presentacion;
+    margin-top: 3rem;
+    margin-left: 6.5rem;
+}
+
+.contenido4 .presentacion .texto1{
+    font-size: 50px;
+    color: #001A40;
+    padding: 1rem;
+}
+
+.contenido4 .presentacion .texto2{
+    font-size: 17px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #001A40;
+    line-height:1.5rem;
+    text-align: start;
+    padding: 1rem;
+}
+
+.contenido4 .foto{
+    grid-area: foto;
+    margin-top: 3rem;
+    margin: 3.5rem;
+}
+
+.contenido4 .foto img{
+    width: 470px;
+    height: 350px;
+}
+
+.contenido4 .desc1{
+    grid-area: desc1;
+    margin-left: 6.5rem;
+    display: grid;
+    grid-template-areas: "img titulo"
+                          "p p";
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+.contenido4 .desc1 .titulo{
+    grid-area: titulo;
+    margin-top: 3rem;
+    font-size: 23px;
+}
+
+.contenido4 .desc1 p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height:1.5rem;
+    text-align: start;
+    padding: 1rem;
+    grid-area: p;
+}
+
+.contenido4 .desc1 img{
+    width: 80px;
+    height: 80px;
+    margin: 1rem;
+    grid-area: img;
+}
+
+.contenido4 .desc2{
+    grid-area: desc2;
+    margin-right: 6.5rem;
+    display: grid;
+    grid-template-areas: "img titulo"
+                          "p p";
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+.contenido4 .desc2 .titulo{
+    grid-area: titulo;
+    margin-top: 3rem;
+    font-size: 23px;
+}
+
+.contenido4 .desc2 p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height:1.5rem;
+    text-align: start;
+    padding: 1rem;
+    grid-area: p;
+}
+
+.contenido4 .desc2 img{
+    width: 80px;
+    height: 80px;
+    margin: 1rem;
+    grid-area: img;
+}
+
+
+.contenido5{
+    background: #EFEFEF;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "titulo"
+                         "contenedorcaja";
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-gap: 20px;
+}
+
+.contenido5 .titulo{
+    grid-area: titulo;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 3rem;
+    color: #001A40;
+}
+
+.contenido5 .contenedorcaja{
+    grid-area: contenedorcaja;
+    height: 100%;
+    display: grid;
+    grid-template-areas: "caja1 caja2 caja3 caja4";
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contenido5 .contenedorcaja img{
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+}
+
+.contenido5 .contenedorcaja p{
+    margin: 20px;
+    color: #001A40;
+    font-weight: bold;
+}
+
+.contenido5 .caja{
+    width: 100%;
+    height: 240px;
+    background: #DDD9D2;
+    color: #001A40;
+}
+
+.contenido5 .caja1{
+    grid-area: caja1;
+}
+
+.contenido5 .caja2{
+    grid-area: caja2;
+}
+
+.contenido5 .caja3{
+    grid-area: caja3;
+}
+
+.contenido5 .caja4{
+    grid-area: caja4;
+}
+
+
+
+.contenido6{
+    width: 100%;
+    height: 100%;
+    background: #EFEFEF;
+    margin-top: 50px;
+}
+
+.contenido6 .contenedorbox{
+    margin-top: 12rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
+    margin-bottom: 8rem;
+    display: grid;
+    grid-template-areas: "box1 box2"
+                         "box3 box4"
+                         "box5 box6"
+                         "box7 box8";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 0.5fr);
+    grid-gap: 25px;
+}
+
+.contenido6 .box{
+    width: 100%;
+    display: grid;
+    grid-template-areas: "img titulo"
+                         "img desc";
+    grid-template-columns: 0.5fr 3fr;
+    grid-template-rows: 30px;
+}
+
+.contenido6 .box .titulo{
+    grid-area: titulo;
+    font-size: 23px;
+    font-weight: bold;
+    color: #001A40;
+    margin-top: 5px;
+}
+
+.contenido6 .box .desc{
+    grid-area: desc;
+    font-weight: normal;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    color: #747575;
+}
+
+.contenido6 .box img{
+    width: 100px;
+    height: 100px;
+    grid-area: img;
+    background: red;
+    margin-right: 15px;
+}
+
+.contenido6 .box1{
+    grid-area: box1;
+}
+
+.contenido6 .box2{
+    grid-area: box2;
+}
+
+.contenido6 .box3{
+    grid-area: box3;
+}
+
+.contenido6 .box4{
+    grid-area: box4;
+}
+
+.contenido6 .box5{
+    grid-area: box5;
+}
+
+.contenido6 .box6{
+    grid-area: box6;
+}
+
+.contenido6 .box7{
+    grid-area: box7;
+}
+
+.contenido6 .box8{
+    grid-area: box8;
+}
+
+
+.contenido7{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.contenido7 .titulo{
+    text-align: center;
+    font-size: 45px;
+    color: #001A40;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.galeria{
+    overflow: hidden;
+    height: 500px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.galeria figure div{
+    width: 20%;
+    float: left;
+}
+
+.contenido7 .galeria .slide{
+    display: grid;
+    grid-template-areas: "img"
+                         "desc"
+                         "espc"
+                         "exp" ;
+    grid-template-rows: 200px 100px repeat(2, 20px);
+    grid-gap: 10px;
+}
+
+.galeria figure img{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    grid-area: img;
+}
+
+.galeria figure .desc{
+    width: 800px;
+    height: 200px;
+    grid-area: desc;
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.galeria figure .espc{
+    width: 400px;
+    grid-area: espc;
+    margin: auto;
+}
+
+.galeria figure .exp{
+    width: 400px;
+    grid-area: exp;
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.galeria figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 60s slidy infinite;
+}
+
+
+.contenido8{
+    margin: auto;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 7%;
+}
+
+.contenido8 .costo{
+    width: 300px;
+    height: 400px;
+    background: white;
+    display: grid;
+    grid-template-areas: "titulo titulo titulo"
+                         "moneda precio sol"
+                         "promo promo promo"
+                         "preregular preregular preregular"
+                         "btnComprar btnComprar btnComprar";
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 20% 20% 10% 20% 30%;
+    grid-gap: 2px;
+    text-align: center;
+}
+
+.contenido8 .costo .titulo{
+    grid-area: titulo;
+    color: #747575;
+    font-size: 25px;
+    padding-top: 50px;
+}
+
+.contenido8 .costo .moneda{
+    grid-area: moneda;
+    font-size: 25px;
+    margin-top: 10px;
+    color: #A2050F;
+    text-align: right;
+}
+
+.contenido8 .costo .precio{
+    grid-area: precio;
+    font-size: 70px;
+}
+
+.contenido8 .costo .sol{
+    grid-area: sol;
+    font-size: 20px;
+    margin-top: 55%;
+    margin-right: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #A5A5A5;
+}
+
+.contenido8 .costo .promo{
+    grid-area: promo;
+    margin-top: 10px;
+}
+
+.contenido8 .costo .preregular{
+    grid-area: preregular;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #585858;
+    font-style: italic;
+    margin: 10px;
+    margin-right: 47px;
+    margin-left: 47px;
+    font-size: 18px;
+}
+
+.contenido8 .costo button{
+    grid-area: btnComprar;
+    background: #001A40;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 10%;
+}
+
+
+
+
+
+
+
+
+
+@keyframes slidy{
+    0%{
+        left: 0%;
+    }
+
+    10%{
+        left: 0%;
+    }
+
+    12%{
+        left: -100%;
+    }
+
+    22%{
+        left: -100%;
+    }
+
+    24%{
+        left: -200%;
+    }
+
+    34%{
+        left: -200%;
+    }
+
+    36%{
+        left: -300%;
+    }
+
+    46%{
+        left: -300%;
+    }
+
+    48%{
+        left: -400%;
+    }
+
+    58%{
+        left: -400%;
+    }
+
+    60%{ 
+        left: -300%;
+    }
+
+    70%{
+        left: -300%;
+    }
+
+    72%{
+        left: -200%;
+    }
+
+    82%{
+        left: -200%;
+    }
+
+    84%{
+        left: -100%;
+    }
+
+    94%{
+        left: -100%;
+    }
+
+    96%{
+        left: 0%;
+    }
+}
+
+
+/* ANIMACIONES */
+
+.animado{
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.mostrarArriba{
+    animation: mostrarArriba 1s;
+}
+
+@keyframes mostrarArriba{
+    0% {
+        transform: translateY(60px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
